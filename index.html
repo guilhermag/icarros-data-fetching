@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário dinâmico</title>
+    <script defer src="script.js"></script>
+
+    <style>
+      body {
+        background-image: url("bg_image.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .content_class {
+        display: flex;
+
+      }
+
+      #brands {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content_class">
+      <form id="form">
+        <input type="text" name="text" id="car_name" />
+        <div id="inputs"></div>
+        <input type="submit" value="buscar" />
+      </form>
+
+      <div id="result"></div>
+    </div>
+
+    <div id="brands"></div>
+  </body>
+</html>
